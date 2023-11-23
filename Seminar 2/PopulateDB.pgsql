@@ -1,4 +1,3 @@
--- Active: 1700694131644@@thebastards.ddns.net@27756@postgres@public
 INSERT INTO person (personnumber,name,phoneNumber,email)
 VALUES
   (993735219341,'Naida Bryan','1-182-232-9634','ut.erat.sed@protonmail.com'),
@@ -146,9 +145,9 @@ VALUES
   (50,1);
 INSERT INTO lesson (id, lessonName, time, duration , room_id)
 VALUES
-  (1,'sample text', '2023-11-22 15:30:00', '02:00:00', NULL),
-  (2,'fun time', '2023-11-22 15:30:00', '02:00:00', NULL),
-  (3,'super happy fun fun time', '2023-11-22 15:30:00', '02:00:00', NULL);
+  (1,'example lesson', '2023-11-22 15:30:00', '02:00:00', NULL),
+  (2,'example grouplesson', '2023-11-22 15:30:00', '02:00:00', NULL),
+  (3,'example ensemble', '2023-11-22 15:30:00', '02:00:00', NULL);
 INSERT INTO individuallesson(lesson_id,price)
 VALUES
   (1,50);
@@ -157,7 +156,7 @@ VALUES
   (2,200,1,50);
 INSERT INTO ensemble(lesson_id, genre, price)
 VALUES
-  (3,'nightcore',50);
+  (3,'classical',50);
 INSERT INTO proficiency(id,skillLevel,instrumenttype)
 VALUES
   (1,'beginner','violin');
