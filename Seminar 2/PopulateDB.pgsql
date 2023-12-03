@@ -137,7 +137,7 @@ VALUES
   (5,1),
   (6,2),
   (7,2),
-  (8,3),
+  (8,3);
 INSERT INTO siblingrelationship (id)
 VALUES
   (1),
