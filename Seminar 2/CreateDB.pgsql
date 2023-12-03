@@ -44,7 +44,7 @@ CREATE TABLE SiblingRelationship (
 
 CREATE TABLE Student (
  person_id INT NOT NULL,
- siblingrelationship_id INT
+ siblingrelationship_id INT NOT NULL
 );
 
 CREATE TABLE address_person (
