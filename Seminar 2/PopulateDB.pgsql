@@ -162,7 +162,7 @@ VALUES
 INSERT INTO ensemble(lesson_id, genre, price)
 VALUES
   (3,'classical',50),
-  (6,200,1,50);
+  (6,'classical ',50);
 INSERT INTO proficiency(id,skillLevel,instrumenttype)
 VALUES
   (1,'beginner','violin');
