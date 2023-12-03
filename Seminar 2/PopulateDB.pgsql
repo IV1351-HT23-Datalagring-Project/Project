@@ -151,7 +151,13 @@ VALUES
   (2, 'Stockholm','Valhallavagen',11420);
 INSERT INTO instructor (person_id, employment_id)
 VALUES
-  (50,1);
+  (50,1),
+  (51,2),
+  (53,3),
+  (54,4),
+  (55,5),
+  (56,6),
+  (57,7);
 INSERT INTO lesson (id, lessonName, time, duration , room_id)
 VALUES
   (1,'example lesson', '2023-11-22 15:30:00', '02:00:00', NULL),
@@ -189,7 +195,12 @@ VALUES
   (2,1);
 INSERT INTO instructor_lesson(lesson_id,instructor_person_id)
 VALUES
-  (1,50);
+  (1,50),
+  (2,51),
+  (3,52),
+  (4,53),
+  (5,54),
+  (6,55);
 INSERT INTO student_lesson(lesson_id,student_person_id)
 VALUES
   (1,1);
