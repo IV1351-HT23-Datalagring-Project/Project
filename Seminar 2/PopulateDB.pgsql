@@ -153,11 +153,11 @@ INSERT INTO instructor (person_id, employment_id)
 VALUES
   (50,1),
   (51,2),
-  (53,3),
-  (54,4),
-  (55,5),
-  (56,6),
-  (57,7);
+  (52,3),
+  (53,4),
+  (54,5),
+  (55,6),
+  (56,7);
 INSERT INTO lesson (id, lessonName, time, duration , room_id)
 VALUES
   (1,'example lesson', '2023-11-22 15:30:00', '02:00:00', NULL),
