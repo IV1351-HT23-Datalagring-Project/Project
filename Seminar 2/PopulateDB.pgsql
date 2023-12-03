@@ -128,6 +128,13 @@ VALUES
 
 
 
+
+INSERT INTO siblingrelationship (id)
+VALUES
+  (1),
+  (2),
+  (3),
+  (4);
 INSERT INTO student (person_id,siblingrelationship_id)
 VALUES
   (1,4),
@@ -138,12 +145,6 @@ VALUES
   (6,2),
   (7,2),
   (8,3);
-INSERT INTO siblingrelationship (id)
-VALUES
-  (1),
-  (2),
-  (3),
-  (4);
 INSERT INTO address (id, city,street,postalcode)
 VALUES
   (1, 'Sundsvall','blablagatan',99999),
