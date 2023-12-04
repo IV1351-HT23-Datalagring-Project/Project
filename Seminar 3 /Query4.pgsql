@@ -1,5 +1,5 @@
 SELECT 
-        CASE
+    CASE
         WHEN EXTRACT(ISODOW FROM lesson.time)=1 THEN 'Mon'
         WHEN EXTRACT(ISODOW FROM lesson.time)=2 THEN 'Tue'
         WHEN EXTRACT(ISODOW FROM lesson.time)=3 THEN 'Wed'
@@ -7,8 +7,7 @@ SELECT
         WHEN EXTRACT(ISODOW FROM lesson.time)=5 THEN 'Fri'
         WHEN EXTRACT(ISODOW FROM lesson.time)=6 THEN 'Sat'
         WHEN EXTRACT(ISODOW FROM lesson.time)=7 THEN 'Sun'
-
-        END AS "weekday",
+    END AS "weekday",
     ensemble.genre AS Genre,
 
     CASE 
