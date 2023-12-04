@@ -1,4 +1,3 @@
--- Active: 1700694131644@@thebastards.ddns.net@27756@project2@public
 SELECT EXTRACT(MONTH from month_beginning) AS month, lesson_type, lesson_count
 FROM (
     SELECT date_trunc('month',time) AS month_beginning, 'Individual' AS lesson_type, count(*) AS lesson_count
