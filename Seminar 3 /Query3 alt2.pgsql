@@ -3,5 +3,5 @@ FROM instructor
 JOIN instructor_lesson ON instructor.person_id = instructor_lesson.instructor_person_id
 JOIN lesson ON instructor_lesson.lesson_id = lesson.id
 JOIN person ON instructor.person_id=person.id
-WHERE EXTRACT(YEAR from time) = 2023 AND EXTRACT(MONTH from time) = 11
-GROUP BY person_id,person.name WHERE "No of lessons" > 0 
+WHERE EXTRACT(YEAR FROM time) = EXTRACT(YEAR FROM CURRENT_DATE) AND EXTRACT(MONTH FROM time) = EXTRACT(MONTH FROM CURRENT_DATE)
+GROUP BY person_id,person.name HAVING COUNT(lesson.id) > 0;
