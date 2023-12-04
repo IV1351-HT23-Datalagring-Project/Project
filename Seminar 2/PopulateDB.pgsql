@@ -172,7 +172,7 @@ VALUES
   (54,5),
   (55,6),
   (56,7);
-INSERT INTO lesson (id, lessonName, time, duration , room_id, maxCapacity, minCapacity, price)
+INSERT INTO lesson (id, lessonName, time, duration , room_id, minCapacity, maxCapacity, price)
 VALUES
   (1,'example lesson', '2023-11-22 15:30:00', '02:00:00', NULL, 1, 1, 200),
   (2,'example grouplesson', '2023-11-22 15:30:00', '02:00:00', NULL, 2, 6, 100),
