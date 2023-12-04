@@ -158,26 +158,26 @@ VALUES
   (54,5),
   (55,6),
   (56,7);
-INSERT INTO lesson (id, lessonName, time, duration , room_id)
+INSERT INTO lesson (id, lessonName, time, duration , room_id, maxCapacity, minCapacity, price)
 VALUES
-  (1,'example lesson', '2023-11-22 15:30:00', '02:00:00', NULL),
-  (2,'example grouplesson', '2023-11-22 15:30:00', '02:00:00', NULL),
-  (3,'example ensemble', '2023-11-22 15:30:00', '02:00:00', NULL),
-  (4,'example lesson', '2023-01-22 15:30:00', '02:00:00', NULL),
-  (5,'example grouplesson', '2023-02-22 15:30:00', '02:00:00', NULL),
-  (6,'example ensemble', '2023-06-22 15:30:00', '02:00:00', NULL);
-INSERT INTO individuallesson(lesson_id,price)
+  (1,'example lesson', '2023-11-22 15:30:00', '02:00:00', NULL, 1, 1, 200),
+  (2,'example grouplesson', '2023-11-22 15:30:00', '02:00:00', NULL, 2, 6, 100),
+  (3,'example ensemble', '2023-11-22 15:30:00', '02:00:00', NULL, 20, 50, 150),
+  (4,'example lesson', '2023-01-22 15:30:00', '02:00:00', NULL, 1, 1, 150), 
+  (5,'example grouplesson', '2022-02-22 15:30:00', '02:00:00', NULL, 3, 8, 100),
+  (6,'example ensemble', '2024-06-22 15:30:00', '02:00:00', NULL, 30, 40, 200);
+INSERT INTO individuallesson(lesson_id)
 VALUES
-  (1,50),
-  (4,50);
-INSERT INTO grouplesson(lesson_id,maxcapacity,mincapacity,price)
+  (1),
+  (4);
+INSERT INTO grouplesson(lesson_id)
 VALUES
-  (2,200,1,50),
-  (5,200,1,50);
-INSERT INTO ensemble(lesson_id, genre, price)
+  (2),
+  (5);
+INSERT INTO ensemble(lesson_id, genre)
 VALUES
-  (3,'classical',50),
-  (6,'classical ',50);
+  (3,'classical'),
+  (6,'classical ');
 INSERT INTO proficiency(id,skillLevel,instrumenttype)
 VALUES
   (1,'beginner','violin');

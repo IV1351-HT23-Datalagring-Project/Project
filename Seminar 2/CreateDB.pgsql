@@ -76,7 +76,10 @@ CREATE TABLE Lesson (
  lessonName VARCHAR(30),
  time TIMESTAMP NOT NULL,
  duration INTERVAL,
- room_id INT
+ room_id INT,
+ minCapacity INT NOT NULL DEFAULT 1,
+ maxCapacity INT NOT NULL DEFAULT 1,
+ price INT NOT NULL DEFAULT 0
 );
 
 CREATE TABLE Lesson_Proficiency (
@@ -105,20 +108,15 @@ CREATE TABLE student_lesson (
 
 CREATE TABLE Ensemble (
  lesson_id INT NOT NULL,
- genre VARCHAR(30),
- price INT
+ genre VARCHAR(30)
 );
 
 CREATE TABLE GroupLesson (
- lesson_id INT NOT NULL,
- maxCapacity INT NOT NULL,
- minCapacity INT NOT NULL,
- price INT
+ lesson_id INT NOT NULL
 );
 
 CREATE TABLE IndividualLesson (
- lesson_id INT NOT NULL,
- price INT
+ lesson_id INT NOT NULL
 );
 
 CREATE TABLE instructor_lesson (
